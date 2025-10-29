@@ -1,72 +1,32 @@
 package com.project.code.Model;
 
-
 import java.util.List;
 
 public class PlaceOrderRequestDTO {
-    private Long storeId;
     private String customerName;
-    private String customerEmail;
-    private String customerPhone;
-    private String datetime;
-    private List<PurchaseProductDTO> purchaseProduct;
+    private String email;
+    private String phone;
+    private Long storeId;
     private Double totalPrice;
+    private List<PurchaseProductDTO> purchaseProduct;
 
-    // Getters and Setters
+    public PlaceOrderRequestDTO() {}
 
-    public Long getStoreId() {
-        return storeId;
-    }
+    public String getCustomerName() { return customerName; }
+    public void setCustomerName(String customerName) { this.customerName = customerName; }
 
-    public void setStoreId(Long storeId) {
-        this.storeId = storeId;
-    }
+    public String getEmail() { return email; }
+    public void setEmail(String email) { this.email = email; }
 
-    public String getCustomerName() {
-        return customerName;
-    }
+    public String getPhone() { return phone; }
+    public void setPhone(String phone) { this.phone = phone; }
 
-    public void setCustomerName(String customerName) {
-        this.customerName = customerName;
-    }
+    public Long getStoreId() { return storeId; }
+    public void setStoreId(Long storeId) { this.storeId = storeId; }
 
-    public String getCustomerEmail() {
-        return customerEmail;
-    }
+    public Double getTotalPrice() { return totalPrice; }
+    public void setTotalPrice(Double totalPrice) { this.totalPrice = totalPrice; }
 
-    public void setCustomerEmail(String customerEmail) {
-        this.customerEmail = customerEmail;
-    }
-
-    public String getCustomerPhone() {
-        return customerPhone;
-    }
-
-    public void setCustomerPhone(String customerPhone) {
-        this.customerPhone = customerPhone;
-    }
-
-    public String getDatetime() {
-        return datetime;
-    }
-
-    public void setDatetime(String datetime) {
-        this.datetime = datetime;
-    }
-
-    public List<PurchaseProductDTO> getPurchaseProduct() {
-        return purchaseProduct;
-    }
-
-    public void setPurchaseProduct(List<PurchaseProductDTO> purchaseProduct) {
-        this.purchaseProduct = purchaseProduct;
-    }
-
-    public Double getTotalPrice() {
-        return totalPrice;
-    }
-
-    public void setTotalPrice(Double totalPrice) {
-        this.totalPrice = totalPrice;
-    }
+    public List<PurchaseProductDTO> getPurchaseProduct() { return purchaseProduct; }
+    public void setPurchaseProduct(List<PurchaseProductDTO> purchaseProduct) { this.purchaseProduct = purchaseProduct; }
 }
